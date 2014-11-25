@@ -7,41 +7,41 @@ Then(/^Once the page is loaded$/) do
 end
 
 Then(/^The title should be FanXchange$/) do
-  page.has_title? ('FanXchange')
+  page.has_title? 'FanXchange'
 end
 
 Then(/^I should see Tickets to any live event in one search$/) do
-  page.should have_content('Tickets to any live event in one search')
+  page.should have_content 'Tickets to any live event in one search' 
 end
 
 Then(/^I should see the menu$/) do
-  pending # express the regexp above with the code you wish you had
+  page.has_css? '#closepls > div.container.hidden-phone > div > div > div > ul'
 end
 
 Then(/^I should see the logo$/) do
-  pending # express the regexp above with the code you wish you had
+  page.has_css? '#closepls > div.container.hidden-phone > div > div > div > a > div'
 end
 
 Then(/^I should see NFL$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'NFL'
 end
 
 Then(/^I should see MLB$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'MLB'
 end
 
 Then(/^I should see NBA$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'NBA'
 end
 
 Then(/^I should see NHL$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'NHL'
 end
 
 Then(/^I should see Concerts$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'Concerts'
 end
 
 Then(/^I should see Theatre$/) do
-  pending # express the regexp above with the code you wish you had
+  page.should have_content 'Theatre'
 end
